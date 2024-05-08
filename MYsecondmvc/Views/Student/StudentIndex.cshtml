@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "StudentIndex";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Content/Student.js"></script>
+
+
+<h2>StudentIndex</h2>
+<label>Name</label></br>
+<input type="text" id="txtName" placeholder="Enter name" style="width:300px" /></br></br>
+<label>Email Id</label></br>
+<input type="text" id="txtEmail" placeholder="Enter email" style="width:300px" /></br></br>
+<label>DOB</label></br>
+<input type="date" id="txtdate" class="form-control" /></br></br>
+<label>Contact_N0</label></br>
+<input type="text" id="txtnumber" placeholder="Enter Number" style="width:200px" /></br></br>
+
+<label>Address</label></br>
+<textarea typeof="text" placeholder="Enter your Address" style="width:1500px;" id="txtAdd">
+</textarea></br></br>
+
+<input type="button" value="submit" class="btn btn-success " onclick="Savereg()" />
+
+<table id="tblStudents" class="table table-bordered">
+    <thead>
+        <tr>
+            <th> Srno </th>
+            <th> Id</th>
+            <th> Name </th>
+            <th> Email_Id </th>
+            <th> DOB </th>
+            <th> Contact_No </th>
+            <th> Address </th>
+            
+        </tr>
+    </thead>
+    <tbody></tbody>
+</table>
